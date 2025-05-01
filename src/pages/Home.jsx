@@ -52,7 +52,7 @@ const Home = () => {
                     dataSource={dados}
                     rowKey="NR_PLACA"
                     pagination={{
-                        pageSize: 10,
+                        pageSize: 16,
                         showSizeChanger: false,
                         showQuickJumper: true,
                         size: "small"
@@ -64,40 +64,49 @@ const Home = () => {
                         }
                     }}
                 >
-                    {/* 1. PLACA */}
-                    <Table.Column 
-                        title={<span className="title-container"><span className="full-title">PLACA</span><span className="short-title">PLC</span></span>} 
-                        dataIndex="NR_PLACA" 
-                        align="center"
-                        render={(text) => <div className="compact-cell">{text ? text.replace(/-/g, '') : "—"}</div>}
-                    />
+                    {/* 1. PLACA (mantida) */}
+<Table.Column 
+    title={<span className="title-container"><span className="full-title">PLACA</span><span className="short-title">PLC</span></span>} 
+    dataIndex="NR_PLACA" 
+    align="center"
+    render={(text) => <div className="compact-cell">{text ? text.replace(/-/g, '') : "—"}</div>}
+/>
 
-                    {/* 2. MODELO */}
-                    <Table.Column 
-                        title={<span className="title-container"><span className="full-title">MODELO</span><span className="short-title">MOD</span></span>} 
-                        dataIndex="NM_MODELO" 
-                        render={(text) => (
-                            <div className="modelo-single-line">
-                                {text || "—"}
-                            </div>
-                        )} 
-                    />
+{/* 2. MODELO (mantida) */}
+<Table.Column 
+    title={<span className="title-container"><span className="full-title">MODELO</span><span className="short-title">MODELO</span></span>} 
+    dataIndex="NM_MODELO" 
+    render={(text) => (
+        <div className="modelo-single-line">
+            {text || "—"}
+        </div>
+    )} 
+/>
 
-                    {/* 3. COR */}
-                    <Table.Column 
-                        title={<span className="title-container"><span className="full-title">COR</span><span className="short-title">COR</span></span>} 
-                        dataIndex="NM_COR" 
-                        align="center"
-                        render={(text) => <div className="compact-cell">{text ? text.substring(0, 3) : "—"}</div>}
-                    />
+{/* 3. ANO (formatada sem aspas) */}
+<Table.Column 
+    title={<span className="title-container"><span className="full-title">ANO</span><span className="short-title">ANO</span></span>} 
+    dataIndex="NM_ANO" 
+    align="center"
+    render={(text) => {
+        if (!text) return <div className="compact-cell">—</div>;
+        
+        // Formata 2023 → 23 | 2022-2023 → 22/23 | 2022/2023 → 22/23
+        const formattedYear = text
+            .replace(/\b\d{2}(\d{2})\b/g, '$1')  // Pega últimos 2 dígitos
+            .replace(/[-\s]/g, '/');  // Troca hífens/espaços por /
+        
+        return <div className="compact-cell">{formattedYear}</div>;
+    }}
+/>
 
-                    {/* 4. ANO */}
-                    <Table.Column 
-                        title={<span className="title-container"><span className="full-title">ANO</span><span className="short-title">ANO</span></span>} 
-                        dataIndex="NM_ANO" 
-                        align="center"
-                        render={(text) => <div className="compact-cell">{text ? "'"+text.toString().slice(-2) : "—"}</div>}
-                    />
+{/* 4. COR (mantida) */}
+<Table.Column 
+    title={<span className="title-container"><span className="full-title">COR</span><span className="short-title">COR</span></span>} 
+    dataIndex="NM_COR" 
+    align="center"
+    render={(text) => <div className="compact-cell">{text ? text.substring(0, 3) : "—"}</div>}
+/>
 
                     {/* 5. VALOR */}
                     <Table.Column 
