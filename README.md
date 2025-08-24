@@ -1,6 +1,6 @@
-##🧩 DTI Front
+#🧩 DTI Front
 
-##📖 Descrição
+#📖 Descrição
 
 O DTI Front é uma amostra de site para padronização de tabela com dados de veículos.
 Projeto freelance desenvolvido em parceria com meu sócio, utilizando o CNPJ da empresa DTI.
