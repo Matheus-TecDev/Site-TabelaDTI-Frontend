@@ -14,7 +14,7 @@ Atualmente está em Create React App, o que deixa o ambiente de desenvolvimento 
 
 ![Preview do Jogo](public/assets/image.png)
 
-👉 [Jogar agora na Vercel](https://site-tabela-dti-frontend.vercel.app/)
+👉 [Acessar agora na Vercel](https://site-tabela-dti-frontend.vercel.app/)
 
 [![Deploy na Vercel](https://vercel.com/button)](https://site-tabela-dti-frontend.vercel.app/)
 
