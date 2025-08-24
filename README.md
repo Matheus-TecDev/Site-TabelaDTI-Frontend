@@ -10,7 +10,7 @@ Atualmente está em Create React App, o que deixa o ambiente de desenvolvimento 
 
 ---
 
-## 🎮 Preview  
+ 🎮 Preview  
 
 ![Preview do Jogo](public/assets/image.png)
 
@@ -20,7 +20,7 @@ Atualmente está em Create React App, o que deixa o ambiente de desenvolvimento 
 
 ---
 
-##⚡ Funcionalidades
+⚡ Funcionalidades
 
 Exibição de tabela de veículos.
 
@@ -32,7 +32,7 @@ Base para futuros ajustes e expansão.
 
 ---
 
-##📚 Conceitos praticados
+📚 Conceitos praticados
 
 Organização e padronização de dados.
 
@@ -44,7 +44,7 @@ Estilização modular.
 
 ---
 
-##🛠️ Tecnologias
+🛠️ Tecnologias
 
 
 React (Create React App)
@@ -55,7 +55,7 @@ HTML5 & CSS3
 
 ---
 
-##🚀 Como usar
+🚀 Como usar
 
 Clone o repositório:
 
@@ -81,7 +81,7 @@ Rode o projeto localmente:
 
 ---
 
-##🤝 Contribuição
+🤝 Contribuição
 
 Sugestões de melhorias são muito bem-vindas!
 
@@ -91,7 +91,7 @@ Envie um Pull Request com suas contribuições.
 
 ---
 
-##📌 Roadmap (versões futuras)
+📌 Roadmap (versões futuras)
 
 🔄 Migrar de Create React App → Vite.
 
@@ -101,7 +101,7 @@ Envie um Pull Request com suas contribuições.
 
 ---
 
-## 👨‍💻 Autores
+👨‍💻 Autores
 
 - [Matheus Freire](https://github.com/Matheus-TecDev)  
 - [LinkedIn](https://www.linkedin.com/in/matheus-freire-martins-da-costa-318622376/) 
