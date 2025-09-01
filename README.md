@@ -18,6 +18,13 @@ Atualmente está em Create React App, o que deixa o ambiente de desenvolvimento 
 
 ---
 
+## 🔗 Repositórios Relacionados
+
+- [Frontend (este repositório)](https://github.com/Matheus-TecDev/Site-TabelaDTI-Frontend.git)
+- [Backend (API)](https://github.com/Matheus-TecDev/Site-TabelaDTI-Backend.git)
+
+---
+
 ## ⚡ Funcionalidades
 
 Exibição de tabela de veículos.
